@@ -1,0 +1,24 @@
+.container{
+    max-width: 1280px;
+}
+body{
+    background-color: #222831;
+}
+nav ul{
+    gap: 48px;
+}
+nav .navbar-nav .nav-link{
+    color: #eeeeee;
+    font-size: 18px;
+}
+/*======== banner ========*/
+#banner {
+    padding: 60px 0;
+}
+#banner h1{
+    color: #eeeeee;
+    font-size: 96px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+/*======== banner end ========*/

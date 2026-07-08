@@ -3,6 +3,7 @@
 }
 body{
     background-color: #222831;
+     font-family: "Poppins", sans-serif;
 }
 nav ul{
     gap: 48px;
@@ -40,10 +41,33 @@ button{
 
 /*======== banner end ========*/
 /*======== about start ========*/
-#about h1{
+#abot{
+    padding: 230px 201px;
+}
+#about h2{
     font-size: 64px;
     font-weight: 700;
     color: #eeeeee;
+    margin-top: 65px;
+}
+#about span{
+    font-size: 64px;
+    font-weight: 700;
+    color: #00adb5;
+}
+
+#about p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #eeeeee;
+    max-width: 389px;
 }
 /*======== about end ========*/
+/*======== work start ========*/
+#work {
+    background: url("../images/project.png") ;
+    background-size: cover ;
+}
+
+/*======== work end ========*/
 

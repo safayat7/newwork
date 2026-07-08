@@ -37,4 +37,13 @@ button{
     font-size: 16px;
     border-radius: 24px;
 }
+
 /*======== banner end ========*/
+/*======== about start ========*/
+#about h1{
+    font-size: 64px;
+    font-weight: 700;
+    color: #eeeeee;
+}
+/*======== about end ========*/
+

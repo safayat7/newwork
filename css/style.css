@@ -14,7 +14,7 @@ nav .navbar-nav .nav-link{
 }
 /*======== banner ========*/
 #banner {
-    padding: 60px 0;
+    padding: 170px 201px;
 }
 #banner h1{
     color: #eeeeee;
@@ -22,13 +22,14 @@ nav .navbar-nav .nav-link{
     font-weight: 700;
     margin-bottom: 24px;
 }
-button{
+#banner button{
     background-color: #00adb5;
     color: #eeeeee;
     border: none;
     padding: 10px 30px;
     font-size: 16px;
     border-radius: 24px;
+     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 #banner .btn-dowload{
     background-color: #393e46;
@@ -37,11 +38,12 @@ button{
     padding: 10px 30px;
     font-size: 16px;
     border-radius: 24px;
+     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /*======== banner end ========*/
 /*======== about start ========*/
-#abot{
+#about{
     padding: 230px 201px;
 }
 #about h2{
@@ -65,9 +67,47 @@ button{
 /*======== about end ========*/
 /*======== work start ========*/
 #work {
+    padding: 230px 201px;
     background: url("../images/project.png") ;
     background-size: cover ;
 }
+#work h2{
+    font-size: 64px;
+    font-weight: 700;
+    color: #eeeeee;
+    margin-top: 65px;
+}
+#work button{
+    background-color: #00adb5;
+    color: #eeeeee;
+    border: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 24px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#work .work-btn{
+ background-color: #393e46;
+    color: #eeeeee;
+    border: 1px solid #00adb5;
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 24px;
+     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#work span{
+    font-size: 64px;
+    font-weight: 700;
+    color: #00adb5;
+}
 
 /*======== work end ========*/
-
+#contact{
+    padding: 230px 201px;
+}
+#contact h2{
+    font-size: 64px;
+    font-weight: 700;
+    color: #eeeeee;
+    margin-top: 65px;
+}

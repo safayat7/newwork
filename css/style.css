@@ -102,12 +102,364 @@ nav .navbar-nav .nav-link{
 }
 
 /*======== work end ========*/
-#contact{
-    padding: 230px 201px;
+/* ==============================
+   Contact Section
+============================== */
+
+.contact {
+  --bg-color: #222b36;
+  --input-color: #2d3743;
+  --text-color: #eeeeee;
+  --accent-color: #00adb5;
+
+  min-height: 100vh;
+  padding: 120px 7%;
+  background-color: var(--bg-color);
 }
-#contact h2{
-    font-size: 64px;
-    font-weight: 700;
-    color: #eeeeee;
-    margin-top: 65px;
+
+.contact__container {
+  width: min(100%, 1300px);
+  margin-inline: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  align-items: center;
+  gap: 100px;
+}
+
+
+/* ==============================
+   Left Content
+============================== */
+
+.contact__content {
+  align-self: start;
+}
+
+.contact__title {
+  max-width: 500px;
+  margin: 0;
+
+  color: var(--text-color);
+  font-size: clamp(3rem, 5vw, 5rem);
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.contact__title span {
+  display: block;
+  color: var(--accent-color);
+}
+
+.contact__illustration {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contact__illustration img {
+  width: min(100%, 420px);
+  height: auto;
+  object-fit: contain;
+}
+
+
+/* ==============================
+   Contact Form
+============================== */
+
+.contact__form {
+  width: 100%;
+}
+
+.contact__fields {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-group label {
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+
+  background-color: var(--input-color);
+  color: var(--text-color);
+
+  font-family: inherit;
+  font-size: 16px;
+
+  border-radius: 16px;
+
+  transition:
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.form-group input {
+  height: 60px;
+  padding: 0 22px;
+}
+
+.form-group textarea {
+  min-height: 280px;
+  margin-top: 12px;
+  padding: 20px 22px;
+
+  resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #9ca3af;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  background-color: #323d49;
+  box-shadow: 0 0 0 2px var(--accent-color);
+}
+
+
+/* ==============================
+   Send Button
+============================== */
+
+.contact__button {
+  margin-top: 24px;
+  padding: 14px 28px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  border: none;
+  border-radius: 30px;
+
+  background-color: var(--accent-color);
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.contact__button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 173, 181, 0.25);
+}
+
+.contact__button:active {
+  transform: translateY(0);
+}
+
+
+/* ==============================
+   Responsive Design
+============================== */
+
+@media (max-width: 900px) {
+  .contact {
+    padding: 80px 6%;
+  }
+
+  .contact__container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .contact__content {
+    text-align: center;
+  }
+
+  .contact__title {
+    margin-inline: auto;
+  }
+
+  .contact__title span {
+    display: inline;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .contact {
+    padding: 60px 20px;
+  }
+
+  .contact__fields {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__title {
+    font-size: 3rem;
+  }
+
+  .form-group textarea {
+    min-height: 220px;
+  }
+
+  .contact__button {
+    width: 100%;
+  }
+}
+/* =========================
+   Footer
+========================= */
+
+.footer {
+  --footer-bg: #222b36;
+  --text-color: #d1d5db;
+  --icon-bg: #35404d;
+  --hover-color: #ffffff;
+
+  min-height: 430px;
+  padding: 110px 6% 30px;
+  background-color: var(--footer-bg);
+  color: var(--text-color);
+}
+
+.footer__container {
+  width: min(100%, 1400px);
+  min-height: 290px;
+  margin-inline: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navigation */
+.footer__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+
+.footer__nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: var(--text-color);
+  font-size: 18px;
+  text-decoration: none;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.footer__nav-link i {
+  font-size: 22px;
+}
+
+.footer__nav-link:hover {
+  color: var(--hover-color);
+  transform: translateY(-2px);
+}
+
+/* Social Icons */
+.footer__socials {
+  display: flex;
+  gap: 22px;
+  margin-top: 55px;
+}
+
+.footer__social-link {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  display: grid;
+  place-items: center;
+
+  background-color: var(--icon-bg);
+  color: var(--text-color);
+  font-size: 20px;
+  text-decoration: none;
+
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.footer__social-link:hover {
+  transform: translateY(-5px);
+  background-color: #465362;
+  color: #ffffff;
+}
+
+/* Bottom Links */
+.footer__bottom {
+  width: 100%;
+  margin-top: auto;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 6px;
+
+  font-size: 16px;
+}
+
+.footer__bottom a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer__bottom a:hover {
+  color: var(--hover-color);
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 768px) {
+  .footer {
+    min-height: auto;
+    padding: 70px 24px 30px;
+  }
+
+  .footer__container {
+    min-height: 320px;
+  }
+
+  .footer__nav {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .footer__socials {
+    margin-top: 45px;
+  }
+
+  .footer__bottom {
+    margin-top: 70px;
+    justify-content: center;
+    text-align: center;
+  }
 }
